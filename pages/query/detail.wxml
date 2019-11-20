@@ -1,0 +1,189 @@
+<view class="page">
+  <view class="page__bd ">
+    <view class="weui-tab">
+      <view class="weui-navbar" style="border-bottom:none;background-color:#fff;">
+        <block wx:for="{{tabs}}" wx:key="*this">
+          <view id="{{index}}" class="weui-navbar__item {{activeIndex == index ? 'weui-bar__item_on' : ''}}" bindtap="tabClick">
+            <view class="weui-navbar__title">{{item}}</view>
+          </view>
+        </block>
+        <view class="weui-navbar__slider" style="left: {{sliderLeft}}px; transform: translateX({{sliderOffset}}px); -webkit-transform: translateX({{sliderOffset}}px);"></view>
+      </view>
+      <view class="weui-tab__panel">
+        <view class="weui-tab__content" hidden="{{activeIndex != 0}}">
+          <view class="page__bd_spacing">
+            <view class="kind-list">
+              <view class="weui-cell weui-cell_input">
+                <view class="weui-cell__hd">
+                  <view class="weui-label">姓名</view>
+                </view>
+                <view class="weui-cell__bd">
+                  <view class="weui-input">纪斌</view>
+                </view>
+              </view>
+              <view class="weui-cell weui-cell_input">
+                <view class="weui-cell__hd">
+                  <view class="weui-label">证件类型</view>
+                </view>
+                <view class="weui-cell__bd">
+                  <view class="weui-input">身份证</view>
+                </view>
+              </view>
+              <view class="weui-cell weui-cell_input">
+                <view class="weui-cell__hd">
+                  <view class="weui-label">证件号码</view>
+                </view>
+                <view class="weui-cell__bd">
+                  <view class="weui-input">4418231965651545</view>
+                </view>
+              </view>
+              <view class="weui-cell weui-cell_input">
+                <view class="weui-cell__hd">
+                  <view class="weui-label">性别</view>
+                </view>
+                <view class="weui-cell__bd">
+                  <view class="weui-input">男</view>
+                </view>
+              </view>
+              <view class="weui-cell weui-cell_input">
+                <view class="weui-cell__hd">
+                  <view class="weui-label">出生日期</view>
+                </view>
+                <view class="weui-cell__bd">
+                  <view class="weui-input">1989-08-23</view>
+                </view>
+              </view>
+              <view class="weui-cell weui-cell_input">
+                <view class="weui-cell__hd">
+                  <view class="weui-label">手机号码</view>
+                </view>
+                <view class="weui-cell__bd">
+                  <view class="weui-input">13415244636</view>
+                </view>
+              </view>
+              <view class="weui-cell weui-cell_input">
+                <view class="weui-cell__hd">
+                  <view class="weui-label">民族 </view>
+                </view>
+                <view class="weui-cell__bd">
+                  <view class="weui-input">汉族</view>
+                </view>
+              </view>
+              <view class="weui-cell weui-cell_input">
+                <view class="weui-cell__hd">
+                  <view class="weui-label">文化程度</view>
+                </view>
+                <view class="weui-cell__bd">
+                  <view class="weui-input">大学</view>
+                </view>
+              </view>
+              <view class="weui-cell weui-cell_input">
+                <view class="weui-cell__hd">
+                  <view class="weui-label">政治面貌</view>
+                </view>
+                <view class="weui-cell__bd">
+                  <view class="weui-input">党员</view>
+                </view>
+              </view>
+              <view class="weui-cell weui-cell_input">
+                <view class="weui-cell__hd">
+                  <view class="weui-label">户口类型</view>
+                </view>
+                <view class="weui-cell__bd">
+                  <view class="weui-input">农村</view>
+                </view>
+              </view>
+              <view class="weui-cell weui-cell_input">
+                <view class="weui-cell__hd">
+                  <view class="weui-label">户籍所在地</view>
+                </view>
+                <view class="weui-cell__bd">
+                  <view class="weui-input">广西南宁</view>
+                </view>
+              </view>
+              <view class="weui-cell weui-cell_input">
+                <view class="weui-cell__hd">
+                  <view class="weui-label">户籍祥址</view>
+                </view>
+                <view class="weui-cell__bd">
+                  <view class="weui-input">新圩街道线芯村村委会</view>
+                </view>
+              </view>
+            </view>
+          </view>
+        </view>
+        <view class="weui-tab__content" hidden="{{activeIndex != 1}}">
+          <view class="page__bd_spacing">
+            <view class="kind-list">
+              <view class="weui-cell weui-cell_input">
+                <view class="weui-cell__hd">
+                  <view class="weui-label">地区</view>
+                </view>
+                <view class="weui-cell__bd">
+                  <view class="weui-input">禅城区</view>
+                </view>
+              </view>
+              <view class="weui-cell weui-cell_input">
+                <view class="weui-cell__hd">
+                  <view class="weui-label">街道</view>
+                </view>
+                <view class="weui-cell__bd">
+                  <view class="weui-input">普君街道办事处</view>
+                </view>
+              </view>
+              <view class="weui-cell weui-cell_input">
+                <view class="weui-cell__hd">
+                  <view class="weui-label">街道巷</view>
+                </view>
+                <view class="weui-cell__bd">
+                  <view class="weui-input">1巷</view>
+                </view>
+              </view>
+              <view class="weui-cell weui-cell_input">
+                <view class="weui-cell__hd">
+                  <view class="weui-label">门牌</view>
+                </view>
+                <view class="weui-cell__bd">
+                  <view class="weui-input">198</view>
+                </view>
+              </view>
+              <view class="weui-cell weui-cell_input">
+                <view class="weui-cell__hd">
+                  <view class="weui-label">房号</view>
+                </view>
+                <view class="weui-cell__bd">
+                  <view class="weui-input">501</view>
+                </view>
+              </view>
+              <view class="weui-cell weui-cell_input">
+                <view class="weui-cell__hd">
+                  <view class="weui-label">派出所</view>
+                </view>
+                <view class="weui-cell__bd">
+                  <view class="weui-input">禅城派出所</view>
+                </view>
+              </view>
+              <view class="weui-cell weui-cell_input">
+                <view class="weui-cell__hd">
+                  <view class="weui-label">居住事由</view>
+                </view>
+                <view class="weui-cell__bd">
+                  <view class="weui-input">务工</view>
+                </view>
+              </view>
+              <view class="weui-cell weui-cell_input">
+                <view class="weui-cell__hd">
+                  <view class="weui-label">居住方式</view>
+                </view>
+                <view class="weui-cell__bd">
+                  <view class="weui-input">单身居住</view>
+                </view>
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+
+  </view>
+</view>

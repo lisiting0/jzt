@@ -1,0 +1,27 @@
+/* pages/review/review.wxss */
+.weui-search-bar {
+  border-bottom: none;
+}
+
+.review-list {
+  margin: 10px 0;
+  position: relative;
+}
+
+.review-btn { 
+  font-size: 12px !important;
+  position: absolute;
+  right: 20px;
+  top: 40%; 
+}
+
+.review-list__item {
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+.review-list__item .weui-form-preview__item {
+  padding: 3px 0;
+}

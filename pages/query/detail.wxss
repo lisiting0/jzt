@@ -1,0 +1,41 @@
+/* pages/query/detail.wxss */
+.kind-list {
+  margin: 10px 0;
+  border-radius: 5px;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+.kind-list__item {
+  padding: 10px;
+}
+
+.kind-list__item-hd {
+  border-bottom: 1px solid #f2f2f2;
+}
+
+.kind-list__title {
+  color: #000;
+  font-size: 14px;
+  text-align: left;
+}
+
+.kind-list__input {
+  font-size: 14px;
+  flex: 1;
+  color: #171819;
+}
+
+.radio__list {
+  display: flex;
+  justify-items: center;
+}
+
+.radio__list .weui-cell:before {
+  border-top: none;
+}
+
+.weui-select {
+  border-right: none;
+  padding-left: 0;
+}
